@@ -12,19 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -39,50 +27,63 @@
       <!-- Left Column -->
       <div class="w3-third">
 
-        <div class="w3-white w3-text-grey w3-card-4">
-          <!-- This container has been modified to not use a profile picture. -->
-          <div class="w3-container">
-            <h2>Jonathan dos Santos Costa</h2>
+        <div id="Left-Column" class="w3-white w3-text-grey w3-card-4">
+          <div class="perfil">
+            <img src="https://avatars.githubusercontent.com/u/62775506?v=4" alt="">
+            <div class="w3-container text-overlay">
+              <h2>Jonathan dos Santos Costa</h2>
+            </div>
           </div>
+
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fa fa-moon-o"></i>
+              <i class="fa fa-sun-o"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+
           <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Freelancer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Brusque-sc, Brasil</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>jonathancosta2100@gmail.com
+            <p><i id="work" class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Freelancer</p>
+            <p><i id="city" class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Brusque-sc, Brasil</p>
+            <p><i id="email"
+                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>jonathancosta2100@gmail.com
             </p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>(47) 99621-6197</p>
+            <p><i id="number" class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>(47) 99621-6197</p>
             <hr>
 
             <p class="w3-large">
-              <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b>
+              <b><i id="i-Skills" class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b>
             </p>
             <p>HTML</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:100%">100%</div>
+              <div id="html" class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:100%">100%</div>
             </div>
             <p>CSS</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:80%">90%</div>
+              <div id="css" class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:90%">90%</div>
             </div>
             <p>JAVASCRIPT</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
+              <div id="js" class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
             </div>
             <p>PHP</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
+              <div id="php" class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
             </div>
             <br>
 
             <p class="w3-large w3-text-theme">
-              <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Idiomas</b>
+              <b><i id="idiomas" class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Idiomas</b>
             </p>
             <p>Português</p>
             <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
+              <div id="pt" class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
             </div>
             <p>Inglês</p>
             <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-indigo" style="height:24px;width:60%"></div>
+              <div id="ing" class="w3-round-xlarge w3-indigo" style="height:24px;width:60%"></div>
             </div>
             <br>
           </div>
@@ -93,10 +94,11 @@
 
       <!-- Right Column -->
       <div class="w3-twothird">
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Sobre</h2>
+        <div id="sobre" class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 id="h2-sobre" class="w3-text-grey w3-padding-16">
+            <i id="h2-i-sobre" class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
+            Sobre
+          </h2>
           <p>Sou um profissional apaixonado pela área de desenvolvedor web. Atualmente, estou cursando a faculdade de
             Sistemas de Internet e estou em busca de uma oportunidade na área para me desenvolver nesse ramo.
             <br><br>
@@ -129,7 +131,8 @@
           </p>
         </div>
 
-        <!--         <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <!--
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16">
             <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Experiências
           </h2>
@@ -141,16 +144,21 @@
               mercado e necessidades das empresas parceiras. Além de garantir que as experiências de aprendizagem tenham
               total sinergia com a nossa metodologia educacional.</p>
           </div>
-        </div> -->
+        </div> 
+      -->
 
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Educação
+        <div id="educacao" class="w3-container w3-card w3-white">
+          <h2 id="h2TitleEducacao" class="w3-text-grey w3-padding-16">
+            <i id="iTitleEducacao" class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
+            Educação
           </h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Março 2022 - <span
-                class="w3-tag w3-indigo w3-round">Atual</span></h6>
+            <h5><b>Digital Innovation One (DIO)</b></h5>
+            <h6 id="h6EducacaoDIO" class="w3-text-indigo">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+              Março 2022 -
+              <span id="spanDio" class="w3-tag w3-indigo w3-round">Atual</span>
+            </h6>
             <p>
               Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários.
               A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências
@@ -169,19 +177,24 @@
             <hr>
           </div>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>Centro Universitário Leonardo da Vinci (UNIASSELVI)</b></h5>
-            <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fevereiro 2023 - Julho 2025
+            <h5>
+              <b>Centro Universitário Leonardo da Vinci (UNIASSELVI)</b>
+            </h5>
+            <h6 id="h6Uni" class="w3-text-indigo">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+              Fevereiro 2023 - Julho 2025
             </h6>
             <p>Tecnologo em Sistemas para Internet.</p>
           </div>
         </div>
 
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projetos
+        <div id="projetos" class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 id="h2Projetos" class="w3-text-grey w3-padding-16">
+            <i id="iProjetos" class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>
+            Projetos
           </h2>
           <div class="w3-container">
-            <h6 class="w3-text-indigo">
+            <h6 id="projeto1" class="w3-text-indigo">
               <i class="fa fa-github fa-fw w3-margin-right"></i>
               <a href="https://github.com/JonathanSantos2000/futebol_score"
                 target="_blank">JonathanSantos2000/futebol_score</a>
@@ -194,7 +207,7 @@
             <hr>
           </div>
           <div class="w3-container">
-            <h6 class="w3-text-indigo">
+            <h6 id="projeto2" class="w3-text-indigo">
               <i class="fa fa-github fa-fw w3-margin-right"></i>
               <a href="https://github.com/JonathanSantos2000/Lista_de_leitura"
                 target="_blank">JonathanSantos2000/Lista_de_leitura</a>
@@ -217,13 +230,14 @@
     <!-- End Page Container -->
   </div>
 
-  <footer class="w3-container w3-indigo w3-center w3-margin-top">
+  <footer id="footer" class="w3-container w3-indigo w3-center w3-margin-top">
     <p>Minhas Redes Sociais</p>
-    <a href="https://github.com/falvojr" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/falvojr" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/JonathanSantos2000" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/jonathan-costa-418073221/" target="_blank"><i
+        class="fa fa-linkedin w3-hover-opacity"></i></a>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
